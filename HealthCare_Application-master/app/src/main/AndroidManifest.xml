@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.coders.healthcareapplication">
+    <!-- network useage permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".view.PopupSolutionActivity"
+            android:theme="@style/PopupSolutionTheme" />
+        <activity
+            android:name=".view.PopupRecordActivity"
+            android:theme="@style/mytheme" /> <!-- android:theme="@style/Theme.AppCompat.Dialog" -->
+        <activity android:name=".camera.SolutionActivity" />
+        <activity android:name=".camera.RecordActivity" />
+        <activity android:name=".view.ManageActivity" /> <!-- popup activity -->
+        <activity
+            android:name=".view.PopupContentActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- @style/mytheme -->
+        <activity android:name=".view.TutorialActivity" />
+
+        <activity android:name=".view.ContentListActivity" />
+        <activity android:name=".view.DbInfoActivity" />
+        <activity android:name=".view.AdminMainActivity" />
+        <activity android:name=".view.HelpActivity" />
+        <activity android:name=".view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

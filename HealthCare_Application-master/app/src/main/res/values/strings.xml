@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">HealthCareApplication</string>
+    <string name="app_title">HOME TRAINING SOLUTION</string>
+    <string name="btn_view_back">뒤로가기</string>
+    <string name="normal_mode">일반 사용자모드 (Normal User Mode)</string>
+    <string name="convert_mode_normalToadmin">관리자 모드 변환</string>
+    <string name="admin_mode">관리자용 모드 (Admin Mode)</string>
+    <string name="conver_mode_adminTonormal">일반 사용자 모드 변환</string>
+    <string name="btn_view_start">Start</string>
+    <string name="btn_view_help">Help</string>
+    <string name="btn_view_dbinfo">데이터 베이스 상태 확인</string>
+    <string name="btn_view_content_manage">모범 자세 컨텐츠 관리</string>
+    <string name="dbinfo_desc">데이터베이스 상태</string>
+    <string name="btn_solution_start">자세 교정 솔루션 시작</string>
+    <string name="btn_goTotutorial">튜토리얼</string>
+    <string name="btn_goTosolution">자세교정</string>
+    <string name="btn_add_video">영상 추가</string>
+    <string name="btn_delete_video">영상 삭제</string>
+    <string name="btn_record">녹화</string>
+    <string name="view_popup_title">제목</string>
+    <string name="view_popup_desc">설명</string>
+    <string name="btn_view_save">저장</string>
+    <string name="btn_view_cancel">취소</string>
+    <string name="ip">122.39.157.16</string>
+    <string name="port">21003</string>
+    <string name="user_view_desc">사용자자세뷰</string>
+    <string name="solution_view_desc">모범자세뷰</string>
+    <string name="record_text_view">대기중</string>
+    <string name="score_example">서버에서 분석한 스케렐톤 데이터를 기반으로 사용자 운동 자세에 대한 문자형태 피드백을 제공</string>
+    <string name="help_content_title_home">홈트레이닝(일반가정)</string>
+    <string name="help_content_desc_home"> 3D 카메라와 TV를 연결하여 본인의 몸을 영상을 통해 보게 되며 적외선을 통해 자세교정 및 운동 가이드 라인을 잡아줌으로서 퍼스널트레이너의 역할을 하게 됩니다. 기어S3와 연동되어 트레이닝프로그램 및 영양가이드(식단), 휴식을 빅데이터를 통해 체크할 수 있으며 운동기간 및 목표를 설정하여 운동목표를 달성할 수 있도록 돕는 조력자 역할을 하게 됩니다. 사용자의 정보를 수집하여 빅데이터 기반으로 성공케이스를 통계로 나타낼 수 있으며, AI가 최적화된 운동방법 및 운동프로그램을 추천할 수 있습니다.
+</string>
+    <string name="help_content_title_expert">전문가용(헬스업종)</string>
+    <string name="help_content_desc_expert">헬스장에 인공지능 디스플레이어가 설치되어 3D카메라와 대형 디스플레이어를 결합하여 웨이트트레이닝의 가이드 라인을 잡아주며 빅데이터를 통하여 운동자세, 중량, 횟수 등을 분석과 체크를 할 수 있으며, 자세가 올바르게 진행되었을 때 초록색으로 표시해주며, 힘의 균형이 맞지 않았을 때 빨간색으로 표시하여 인공지능이 알려줍니다. 기구에 압력패드를 설치하여 더욱 정교하게 균형 있는 운동을 할 수 있도록 도움을 줄 수 있습니다. 마찬가지로 기어S3와 연동되기 때문에 본인의 운동계획과 프로그램을 기록할 수 있으며, 도움 받을 수 있으며, 빅데이터 기반으로 이를 해결할 수 있습니다.</string>
+    <string name="help_content">홈트레이닝(일반가정)\n
+        3D 카메라와 TV를 연결하여 본인의 몸을 영상을 통해 보게 되며 적외선을 통해 자세교정 및 운동 가이드 라인을 잡아줌으로서 퍼스널트레이너의 역할을 하게 됩니다. 기어S3와 연동되어 트레이닝프로그램 및 영양가이드(식단), 휴식을 빅데이터를 통해 체크할 수 있으며 운동기간 및 목표를 설정하여 운동목표를 달성할 수 있도록 돕는 조력자 역할을 하게 됩니다. 사용자의 정보를 수집하여 빅데이터 기반으로 성공케이스를 통계로 나타낼 수 있으며, AI가 최적화된 운동방법 및 운동프로그램을 추천할 수 있습니다.\n
+        \n\n전문가용(헬스업종)\n
+        헬스장에 인공지능 디스플레이어가 설치되어 3D카메라와 대형 디스플레이어를 결합하여 웨이트트레이닝의 가이드 라인을 잡아주며 빅데이터를 통하여 운동자세, 중량, 횟수 등을 분석과 체크를 할 수 있으며, 자세가 올바르게 진행되었을 때 초록색으로 표시해주며, 힘의 균형이 맞지 않았을 때 빨간색으로 표시하여 인공지능이 알려줍니다. 기구에 압력패드를 설치하여 더욱 정교하게 균형 있는 운동을 할 수 있도록 도움을 줄 수 있습니다. 마찬가지로 기어S3와 연동되기 때문에 본인의 운동계획과 프로그램을 기록할 수 있으며, 도움 받을 수 있으며, 빅데이터 기반으로 이를 해결할 수 있습니다.</string>
+    <string name="title_activity_tutorial">TutorialActivity</string>
+    <string name="conetent_help_category">원하는 운동 카테고리를\n클릭해보세요</string>
+    <string name="content_help_exercise">원하는 운동을 클릭 후 가이드영상과 자세 교정 서비스를 만나보세요</string>
+    <string name="tutorial_help">가이드 영상을 시청 후\n자세 교정 서비스를 만나보세요</string>
+    <string name="manage_video_add">영상 추가 버튼 클릭 후\n가이드 영상을 직접 촬영해보세요</string>
+    <string name="manage_help_category">원하는 운동 카테고리를\n클릭해보세요</string>
+    <string name="manage_video_delete">삭제하길 원하는 운동을 클릭 후\n영상 삭제 버튼을 클릭하세요</string>
+</resources>

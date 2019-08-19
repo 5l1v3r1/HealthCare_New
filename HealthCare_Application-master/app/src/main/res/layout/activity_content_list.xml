@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/title_2"
+    tools:context=".view.ContentListActivity">
+
+    <TextView
+        android:id="@+id/view_normal_mode_contentlist"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/normal_mode"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/view_mode_line"
+        app:layout_constraintTop_toTopOf="@+id/view_normal_mode_contentlist"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btn_back_content"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@mipmap/btn_back"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/btn_view_back"
+        app:layout_constraintBottom_toTopOf="@+id/exercise_list"
+        app:layout_constraintStart_toStartOf="@+id/view_normal_mode_contentlist"
+        app:layout_constraintTop_toBottomOf="@+id/view_normal_mode_contentlist"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_content"
+        android:layout_width="450dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btn_convert_to_admin_content_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/line_title"
+        app:layout_constraintVertical_bias="0.147">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ListView
+        android:id="@+id/exercise_list"
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="8dp"
+        android:divider="#00000000"
+        android:dividerHeight="25dp"
+        android:scrollbars="vertical"
+        android:listSelector="@mipmap/btn_bar_list_click"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_convert_to_admin_content_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_content"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_convert_to_admin_content_list"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@mipmap/btn_convert"
+        android:gravity="center"
+        android:paddingRight="30dp"
+        android:text="@string/convert_mode_normalToadmin"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="492dp" />
+
+    <TextView
+        android:id="@+id/manual_content"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/conetent_help_category"
+        android:textColor="@android:color/background_light"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/exercise_list"
+        app:layout_constraintEnd_toEndOf="@+id/view_normal_mode_contentlist"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toEndOf="@+id/recyclerView_content"
+        app:layout_constraintTop_toBottomOf="@+id/view_normal_mode_contentlist"
+        app:layout_constraintVertical_bias="0.338" />
+
+    <TextView
+        android:id="@+id/manual_content_exercise"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="@string/content_help_exercise"
+        android:textColor="@android:color/background_light"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_content"
+        app:layout_constraintVertical_bias="0.201" />
+
+</android.support.constraint.ConstraintLayout>
