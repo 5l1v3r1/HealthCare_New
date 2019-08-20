@@ -191,9 +191,9 @@ public class RecordActivity extends AppCompatActivity {
         final EditText edittext = new EditText(this);
         edittext.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
-                public void onFocusChange(View view, boolean b) {
-                    InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-                    imm.showSoftInput(edittext, 0);
+            public void onFocusChange(View view, boolean b) {
+                InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+                imm.showSoftInput(edittext, 0);
             }
         });
 
@@ -233,7 +233,7 @@ public class RecordActivity extends AppCompatActivity {
                     }
                 });
 
-      //  AlertDialog dialog = builder.create();
+        //  AlertDialog dialog = builder.create();
 
       /*  mHandler.postDelayed(new Runnable() {
             @Override
@@ -244,7 +244,7 @@ public class RecordActivity extends AppCompatActivity {
         },1000);*/
 
         //dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
-       // dialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE|WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
+        // dialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE|WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
 
         builder.show();
     }

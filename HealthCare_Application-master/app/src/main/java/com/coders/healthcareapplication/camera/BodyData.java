@@ -150,8 +150,6 @@ public class BodyData {
 
         float cs = cosineSimilarity(userDataVector, trainerData);
 
-        //efc.println(cs);
-
         if (cs >= CUTLINE_STD){
             return 1;
         }
@@ -188,18 +186,14 @@ public class BodyData {
             }
         }
 
-        //efc.println(sum);
-        //efc.println("--------------------------");
-
-        //return sum;
         if(sum >= FIRSTCUTLINE){
             return 100;
         }
         else if(sum >= SECONDCUTLINE){
-            return 70;
+            return 50;
         }
         else if(sum >= LASTCUTLINE){
-            return 30;
+            return 0;
         }
         else{
             return 0;

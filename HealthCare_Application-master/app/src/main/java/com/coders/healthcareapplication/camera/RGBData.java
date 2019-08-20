@@ -216,7 +216,9 @@ public class RGBData {
         int[][] lineList = {{0, 18}, {18, 1}, {1, 2}, {2, 3}, {3, 16}, {1, 5}, {5, 6}, {6, 17}, {1, 8}, {8, 9}, {9, 10}, {10, 11}, {11, 12}, {9, 13}, {13, 14}, {14, 15},  {4, 16}, {7, 17}, {6, 17}};
         rgbCanvas.drawBitmap(bitmap, 0, 0, null);
 
+        boolean check = true;
         if(mode == 2 && body !=null){
+            check = false;
             for(int i = 0; i < SKELETONLENGTH; i++){
                 if(i >= body.getJoints().length){
                     rgbSkeletonData[cnt][i] = new Vector2D(0, 0);
@@ -233,6 +235,14 @@ public class RGBData {
             }
         }
 
+        if(check && mode != 3){
+            if(mode == 2){
+                for(int i = 0; i < SKELETONLENGTH; i++){
+                    rgbSkeletonData[cnt][i] = new Vector2D(0, 0);
+                }
+            }
+            return;
+        }
         if(mode >= 2){
             for(int i = 0; i < lineList.length; i++){
                 try {
