@@ -46,5 +46,5 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation files('libs/jcodec-android-0.2.3.jar')
     implementation files('libs/jcodec-0.2.3.jar')
-    implementation project(':astra-android-release-v2.0.16-e6b4f7afb2')
+    implementation project(':AstraSDK-v2.0.17-686b69b99f-astra-android-release')
 }
